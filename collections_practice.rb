@@ -41,6 +41,6 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each_with_index.collect {|i| i + "s"} unless array[1]
+  array.except(array[1]).collect {|i| i + "s"}
 end
 
