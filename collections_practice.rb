@@ -42,7 +42,8 @@ end
 
 def add_s(array)
   array.collect.each_with_index do |i|
-    unless i + "s"
+    unless array[1] 
+    i + "s"
   end
 end
 
